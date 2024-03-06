@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    min-height: 100vh;
+    border: 2px solid;
+    background-color: aquamarine;
+
+    /* center d app-content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app-content{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    border: 5px solid green;
+}
