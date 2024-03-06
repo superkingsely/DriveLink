@@ -67,6 +67,12 @@ section{
 
 /* mobile view */
 @media (max-width:600px) {
+    nav ul{
+        display: flex;
+        justify-content: end;
+        gap: 5%;
+        display: none;
+    }
     .hero-section{
         display: flex;
         flex-direction: column;
