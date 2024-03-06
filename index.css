@@ -20,6 +20,6 @@
     max-width: 1200px;
     width: 100%;
     min-height: 100vh;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     border: 5px solid green;
 }
