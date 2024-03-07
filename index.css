@@ -168,11 +168,12 @@ section {
   header span{
     display: block;
     color: white;
-    background-color: azure;
 
   }
   header span img{
     width: 30px;
+    background-color: azure;
+
   }
   nav  {
     padding: 5vh;
@@ -209,6 +210,9 @@ section {
   nav span img {
     /* menu-line */
     color: rgb(235, 18, 18);
+    background-color: black;
+    padding: 3px;
+    border-radius: 50%;
     /* background-color: blue; */
   }
   /* ----------main-------- */
