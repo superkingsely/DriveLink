@@ -31,7 +31,6 @@ header {
   max-width: 1200px;
   width: 100%;
   border: 2px solid;
-  background: url(./dark\ bg.PNG);
   /* background-color: rgba(0, 0, 0, 0.493); */
 
   display: flex;
@@ -161,17 +160,19 @@ section {
 /* mobile view */
 @media (max-width: 600px) {
   /* desktop */
-  /* header{
-  background-color: rgb(0, 0, 0);
+  header{
+  background: url(./dark\ bg.PNG);
 
-    width: 100%;
-  } */
+    /* width: 100%; */
+  }
   header span{
     display: block;
+    color: white;
+    background-color: azure;
+
   }
   header span img{
     width: 30px;
-    /* color: white; */
   }
   nav  {
     padding: 5vh;
