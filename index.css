@@ -30,7 +30,7 @@ header {
   max-width: 1200px;
   width: 100%;
   border: 2px solid;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.493);
 
   display: flex;
   align-items: center;
