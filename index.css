@@ -160,6 +160,8 @@ section {
 @media (max-width: 600px) {
   /* desktop */
   /* header{
+  background-color: rgb(0, 0, 0);
+
     width: 100%;
   } */
   header span{
@@ -240,7 +242,7 @@ section {
     text-align: center;
     font-size: 22px;
     line-height: 30px;
-    word-spacing: 8px;
+    word-spacing: 0.05vw;
   }
   .button-box{
     width: 100%;
