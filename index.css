@@ -7,7 +7,7 @@
 .app {
   min-height: 100vh;
   border: 2px solid;
-  background: url(./white\ background.PNG);
+  /* background: url(./dark\ bg.PNG); */
 
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ header {
   max-width: 1200px;
   width: 100%;
   border: 2px solid;
-  background: url(./white\ background.PNG);
+  background: url(./dark\ bg.PNG);
   /* background-color: rgba(0, 0, 0, 0.493); */
 
   display: flex;
@@ -168,6 +168,10 @@ section {
   } */
   header span{
     display: block;
+  }
+  header span img{
+    width: 40px;
+    color: white;
   }
   nav  {
     padding: 5vh;
