@@ -170,8 +170,8 @@ section {
     display: block;
   }
   header span img{
-    width: 40px;
-    color: white;
+    width: 30px;
+    /* color: white; */
   }
   nav  {
     padding: 5vh;
