@@ -17,6 +17,7 @@
 }
 
 .app-content {
+    border: 5px solid red;
   max-width: 1200px;
   width: 100%;
   /* min-height: 100vh; */
@@ -67,7 +68,11 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
+}
+nav ul li{
+    margin-left: 2rem;
+  /* gap: 2rem; */
 }
 /* mobile */
 nav span {
@@ -170,11 +175,12 @@ section.hw-it-works .overlay{
     align-items: center;
 }
 .app-content.hw-it-works{
+    border: 5px solid yellow;
     max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
 }
 section.hw-it-works .overlay span.title{
     color: white;
@@ -196,6 +202,16 @@ section.hw-it-works .overlay .row{
     display: flex;
     flex-direction: column;
 }
+/* ---------------box1 and 3 */
+.row .col1 .box{
+    /* background-color: aqua; */
+}
+.row .col1 .box2{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 .row .col2{
     flex: 2 1 0;
     border: 2px solid rgb(60, 255, 0);
@@ -205,6 +221,16 @@ section.hw-it-works .overlay .row{
     border: 2px solid rgb(4, 0, 255);
     display: flex;
     flex-direction: column;
+}
+/* ----box 3 nd 4 */
+.row .col3 .box{
+    /* background-color: aqua; */
+}
+.row .col3 .box2{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 
@@ -243,6 +269,31 @@ section.about{
     border-radius: 30px;
     flex: 1 1 300px;
     height: 30vh;
+}
+/* ------------contact-- */
+section.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-content.contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .title{
+    margin-top: 10vh;
+}
+.contact .row{
+    width: 100%;
+    display: flex;
+}
+.contact .row .box{
+    border: 2px solid green;
+}
+.contact .row .box{
+    flex: 1 1 0;
 }
 
 /* ---------- download the app */
