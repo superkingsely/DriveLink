@@ -5,11 +5,13 @@
 }
 
 .app {
+    position: relative;
   min-height: 100vh;
   border: 2px solid;
   /* background: url(./dark\ bg.PNG); */
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -17,20 +19,28 @@
 .app-content {
   max-width: 1200px;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 img{
     width: 100%;
 }
-header {
-  position: fixed;
-  left: auto;
-  top: 0;
-  z-index: 100;
+header{
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: url(./white\ background.PNG);
+    width: 100%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+}
+.app-content.header {
+    border: 2px solid;
   min-height: 10vh;
   max-width: 1200px;
   width: 100%;
-  border: 2px solid;
   /* background-color: rgba(0, 0, 0, 0.493); */
 
   display: flex;
@@ -74,8 +84,15 @@ nav ul li a {
   color: black;
 }
 /* -----------------main------------- */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 section {
   min-height: 100vh;
+  width: 100%;
   border: 2px solid;
 }
 .hero-section {
@@ -135,17 +152,182 @@ section {
     gap: 1rem;
 }
 .button-box img{
+    width: 40%;
     height: 100%;
 }
 
 /* ----------how it works------ */
 
+section.hw-it-works{
+    background: url('./hwItWorks/background.jpg');
+}
+section.hw-it-works .overlay{
+    background-color: rgba(43, 0, 83, 0.904);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-content.hw-it-works{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+section.hw-it-works .overlay span.title{
+    color: white;
+    margin-top: 10vh;
+    font-weight: 700;
+    font-size: 1.2rem;
+    word-spacing: 0.5vw;
 
 
+}
+section.hw-it-works .overlay .row{
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+}
+.row .col1{
+    flex: 1 1 0;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.row .col2{
+    flex: 2 1 0;
+    border: 2px solid rgb(60, 255, 0);
+}
+.row .col3{
+    flex: 1 1 0;
+    border: 2px solid rgb(4, 0, 255);
+    display: flex;
+    flex-direction: column;
+}
 
-/* download app */
+
+/* --------Why drivlink */
+section.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-content.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about span{
+    margin-top: 10vh;
+    font-weight: 700;
+    font-size: 1.2rem;
+    word-spacing: 0.5vw;
+}
+.about .row{
+    margin-top: 10vh;
+    border: 2px solid blue;
+    width: 100%;
+    flex-grow: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+    
+}
+.row .box{
+    border: 2px solid yellow;
+    border-radius: 30px;
+    flex: 1 1 300px;
+    height: 30vh;
+}
+
+/* ---------- download the app */
+section.download-d-app{
+    background-color: rgba(43, 0, 83, 0.904);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-content.download-d-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.download-d-app .title{
+    color: white;
+    margin-top: 10vh;
+    font-weight: 900;
+    font-size: 2.5rem;
+    word-spacing: 0.5vw;
+}
+section.download-d-app .row2{
+    /* border: 2px solid; */
+    width: 100%;
+    max-width: 700px;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 1vw;
+}
+section.download-d-app .row2 img{
+    width: 40%;
+}
+section.download-d-app .row3{
+    margin-top: 3vh;
+}
 
 
+/* -------------footer */
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* min-height: 20vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-content{
+    border: 2px solid white;
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    border: 2px solid red;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.info .box{
+    flex: 1 1 0;
+}
+.info .box1{
+    flex-grow: 2;
+}
+.info .box2{
+    display: flex;
+    justify-content: space-between;
+}
+.info a{
+    color: white;
+}
+.copyright{
+    padding: 3vh 0;
+}
 
 
 
@@ -189,7 +371,7 @@ section {
     align-items: end;
     /* align-items: end; */
     /* display: none; */
-    transition: all 3s;
+    transition: all 1s;
   }
   nav.clicked{
     left: 0;
