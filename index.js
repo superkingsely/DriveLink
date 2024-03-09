@@ -16,3 +16,11 @@ nav.addEventListener('click',()=>{
         nav.classList.remove('clicked')
     }
 })
+// --------------Typed js
+const typed=new Typed('.hero-con span',{
+    strings:['Drivelink','Drivelink','Drivelink','Drivelink'],
+    loop:true,
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1500,
+})

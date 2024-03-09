@@ -53,13 +53,15 @@ header div {
   align-items: center;
 }
 .logo img {
-  width: 2.5rem;
+  width: 3rem;
   margin-top: 3px;
 }
 .logo p {
+  font-size: 2rem;
   margin-left: 3px;
   font-weight: 600;
   color: rgb(1, 1, 128);
+  margin-left: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -128,7 +130,7 @@ section {
 }
 .hero-img img {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .hero-con {
@@ -158,7 +160,7 @@ section {
   word-spacing: 8px;
 }
 .button-box{
-    height: 50px;
+    height: 4rem;
     display: flex;
     gap: 1rem;
 }
@@ -173,7 +175,7 @@ section.hw-it-works{
     background: url('./hwItWorks/background.jpg');
 }
 section.hw-it-works .overlay{
-    background-color: rgba(18, 0, 83, 0.904);
+    background-color: rgb(46 57 109 );
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -201,6 +203,7 @@ section.hw-it-works .overlay .row{
     flex-grow: 1;
     width: 100%;
     display: flex;
+    margin-top: 5vh;
 }
 .row .col1{
     flex: 1 1 0;
@@ -217,12 +220,26 @@ section.hw-it-works .overlay .row{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 100%;
+    height: 65%;
 }
 .row .col2{
     flex: 2 1 0;
     /* border: 2px solid rgb(60, 255, 0); */
 }
+.row .col2 img{
+  /* border: 2px solid; */
+  animation: phoneAnime 3s ease-in-out infinite;
+}
+@keyframes phoneAnime {
+  0%{
+    transform: translateY(0vh);
+  }
+  50%{
+    transform: translateY(5vh);
+  }
+}
+
+
 .row .col3{
     flex: 1 1 0;
     /* border: 2px solid rgb(4, 0, 255); */
@@ -238,7 +255,7 @@ section.hw-it-works .overlay .row{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 100%;
+    height: 65%;
 }
 .hw-it-works .row.col.mobile{
   display: none;
@@ -286,6 +303,9 @@ section.about{
   width: 100%;
   height: 100%;
 }
+
+
+
 /* ------------contact-- */
 /* #region */
 
@@ -390,8 +410,8 @@ form .two-fg{
 
 /* ---------- download the app */
 section.download-d-app{
-    background-color: rgba(18, 0, 83, 0.904);
-
+    background-color: rgb(46 57 109 );
+    /* rgb(46 57 109 ) */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,12 +495,12 @@ footer .footer-content{
 }
 .info .box1 .icon{
   display: flex;
-  gap: 10px;
+  gap: 1.5rem;
   margin-top: 5px;
 }
 .info .box1 .icon a{
   display: block;
-  width: 40px;
+  width: 2rem;
 }
 .info .box2{
     display: flex;
@@ -491,6 +511,10 @@ footer .footer-content{
 }
 .copyright{
     padding: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
 }
 
 
@@ -521,6 +545,10 @@ footer .footer-content{
     /* background-color: azure; */
 
   }
+  .logo p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
   nav  {
     padding: 5vh;
     position: fixed;
@@ -549,7 +577,9 @@ footer .footer-content{
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 40px;
+    gap: 60px;
+    font-size: 22px;
+    font-weight: 500;
   }
   nav span {
     display: block;
@@ -582,6 +612,7 @@ footer .footer-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 5%;
   }
 
   .hero-con {
@@ -595,14 +626,14 @@ footer .footer-content{
     word-spacing: 0px;
     font-weight: bolder;
     /* font-size: xx-large; */
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     line-height: 7vh;
   }
   .gen-con2 p {
     /* font-weight: 500; */
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 4.7vh;
     word-spacing: 0.05vw;
     margin-top: -4vh;
@@ -624,19 +655,19 @@ footer .footer-content{
 .hero-img.mobile{
   display: block;
   position: relative;
+  padding: 10% 5%;
 }
-.hero-img.mobile .dot{
+.hero-img.mobile img{
+  height: 100%;
+}
+/* .hero-img.mobile .dot{
 
-  /* border-radius: 30%; */
   height: 110%;
   width: 90%;
   position: absolute;
   right: 5%;
-  /* top: 10%; */
 }
 .hero-img.mobile .eclipse{
-  /* display: none; */
-  /* border: 5px solid greenyellow; */
   border-radius: 50%;
   height: 90%;
   width: 80%;
@@ -649,7 +680,8 @@ footer .footer-content{
   top: 20%;
   height: 80%;
 
-}
+} */
+
 /* .eclipse{
   height: 300px;
   border: 5px solid gold;
@@ -668,6 +700,8 @@ footer .footer-content{
 .hw-it-works .row.col.mobile{
   display: flex;
   flex-direction: column;
+  padding: 0 5%;
+  padding-bottom: 10%;
 }
 .hw-it-works .row.col.mobile .col1{
   /* border: 5px solid blue; */
@@ -694,9 +728,9 @@ footer .footer-content{
 .hw-it-works .row.col.desktop{
   display: none;
 }
-/* --------------about-- */
+/* --------------about--Hw it work */
 .about .row{
-  margin-top: 10vh;
+  margin-top: 5vh;
   /* border: 2px solid blue; */
   width: 100%;
   flex-grow: 0.1;
@@ -706,15 +740,22 @@ footer .footer-content{
   flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 3px;
+  padding: 0 5%;
+  padding-bottom: 15%;
   
 }
 .about .row .box{
-  flex: 1 1 150px;
+  flex: 1 1 200px;
 }
+
+
+
 /* --------------contact us-- */
 .contact-img{
   display: none;
 }
+
+
 /* -------------------download app */
 .download-d-app span{
   text-align: center;
@@ -725,6 +766,9 @@ footer .footer-content{
   margin-bottom: 45%;
 }
 /* ---------------------footer */
+footer{
+  background-color: rgb(15 16 36 );
+}
 .info{
   /* border: 2px solid red; */
   width: 100%;
@@ -745,14 +789,14 @@ footer .footer-content{
   
 }
 .info .box1 span img{
-  width: 150px;
-  height: 70px;
+  /* width: ; */
+  /* height: 1%; */
   /* border: 2px solid red; */
 }
 .info .box2{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5vh;
   font-size: 20px;
 
 }
