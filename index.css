@@ -211,6 +211,7 @@ section.hw-it-works .overlay .row{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    height: 100%;
 }
 .row .col2{
     flex: 2 1 0;
@@ -231,8 +232,11 @@ section.hw-it-works .overlay .row{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    height: 100%;
 }
-
+.hw-it-works .row.col.mobile{
+  display: none;
+}
 
 /* --------Why drivlink */
 section.about{
@@ -264,8 +268,8 @@ section.about{
     column-gap: 10px;
     
 }
-.row .box{
-    /* border: 2px solid yellow; */
+.about .row .box{
+    border: 2px solid yellow;
     border-radius: 30px;
     flex: 1 1 300px;
     height: 30vh;
@@ -275,12 +279,29 @@ section.contact{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(43, 0, 83, 0.904);
+
 }
 .app-content.contact{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+.box-shadow{
+  border: 2px solid yellow;
+  width: 90%;
+  background-color: white;
+  /* height: 60%; */
+  padding: 5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.box-shadow .row .box2 img{
+  width: 100%;
+  height: 100%;
 }
 .contact .title{
     margin-top: 10vh;
@@ -292,7 +313,62 @@ section.contact{
 .contact .row .box{
     border: 2px solid green;
 }
-.contact .row .box{
+.contact .row .box1{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .row .box1 span{
+  border: 2px solid;
+  width: 100%;
+  /* text-align: center; */
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.contact .row .box1 p{
+  /* font-size: 22px; */
+  margin-top: 1%;
+  width: 100%;
+  /* text-align: center; */
+}
+.contact .row .box1 form{
+  border: 2px solid ;
+  width: 100%;
+  flex-grow: 1;
+}
+input{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+textarea{
+  width: 100%;
+  border-radius: 10px;
+
+  outline: none;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+form button{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+form .two-fg{
+  display: flex;
+  gap: 5%;
+}
+.form-group{
+  margin-top: 10px;
+}
+.contact .row .box2{
     flex: 1 1 0;
 }
 
@@ -331,6 +407,9 @@ section.download-d-app .row2 img{
 }
 section.download-d-app .row3{
     margin-top: 3vh;
+}
+section.download-d-app .row3 img{
+  margin-bottom: 20vh;
 }
 
 
@@ -394,7 +473,7 @@ footer .footer-content{
 @media (max-width: 600px) {
   /* desktop */
   header{
-  background: url(./dark\ bg.PNG);
+  /* background: url(./dark\ bg.PNG); */
 
     /* width: 100%; */
   }
@@ -436,14 +515,15 @@ footer .footer-content{
     display: flex;
     flex-direction: column;
     align-items: end;
+    gap: 40px;
   }
   nav span {
     display: block;
   }
   nav span img {
     /* menu-line */
-    color: rgb(235, 18, 18);
-    background-color: black;
+    /* color: rgb(235, 18, 18); */
+    /* background-color: black; */
     padding: 3px;
     border-radius: 50%;
     /* background-color: blue; */
@@ -498,5 +578,39 @@ footer .footer-content{
 .button-box img{
     height: 100%;
     width: 40%;
+}
+/* ------------------How it work----- */
+.hw-it-works .row.col.mobile{
+  display: flex;
+  flex-direction: column;
+}
+.hw-it-works .row.col.mobile .col1{
+  border: 5px solid blue;
+
+}
+.hw-it-works .row.col.mobile .col1 .box{
+  border: 5px solid red;
+  width: 70%;
+}
+.hw-it-works .row.col.mobile .col1 .box2{
+  margin-left: auto;
+  margin-top: 5px;
+}
+.hw-it-works .row.col.mobile .col3 .box{
+  border: 5px solid red;
+  width: 70%;
+}
+.hw-it-works .row.col.mobile .col3 .box4{
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+/* desktop */
+.hw-it-works .row.col.desktop{
+  display: none;
+}
+/* --------------contact us-- */
+.contact-img{
+  display: none;
 }
 }
