@@ -677,8 +677,8 @@ footer .footer-content{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 5px;
+  row-gap: 10px;
+  column-gap: 3px;
   
 }
 .about .row .box{
