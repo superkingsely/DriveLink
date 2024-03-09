@@ -668,6 +668,19 @@ footer .footer-content{
   display: none;
 }
 /* --------------about-- */
+.about .row{
+  margin-top: 10vh;
+  border: 2px solid blue;
+  width: 100%;
+  flex-grow: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 5px;
+  
+}
 .about .row .box{
   flex: 1 1 150px;
 }
