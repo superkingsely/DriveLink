@@ -7,7 +7,7 @@
 .app {
     position: relative;
   min-height: 100vh;
-  border: 2px solid;
+  /* border: 2px solid; */
   /* background: url(./dark\ bg.PNG); */
 
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 .app-content {
-    border: 5px solid red;
+    /* border: 5px solid red; */
   max-width: 1200px;
   width: 100%;
   /* min-height: 100vh; */
@@ -33,12 +33,12 @@ header{
     z-index: 100;
     background: url(./white\ background.PNG);
     width: 100%;
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     justify-content: center;
 }
 .app-content.header {
-    border: 2px solid;
+    /* border: 2px solid; */
   min-height: 10vh;
   max-width: 1200px;
   width: 100%;
@@ -99,7 +99,7 @@ main{
 section {
   min-height: 100vh;
   width: 100%;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 .hero-section {
   display: flex;
@@ -107,7 +107,7 @@ section {
   /* flex-wrap: wrap; */
 }
 .hero-content {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex: 1 1 300px;
 
   display: flex;
@@ -123,7 +123,7 @@ section {
 }
 /* -------------hero image--------- */
 .hero-img {
-  border: 2px solid rgb(51, 255, 0);
+  /* border: 2px solid rgb(51, 255, 0); */
   flex: 1 1 300px;
 }
 .hero-img img {
@@ -132,7 +132,7 @@ section {
 }
 
 .hero-con {
-  border: 2px solid;
+  /* border: 2px solid; */
   /* max-width: 250px; */
   /* margin-top: 20vh; */
 }
@@ -181,7 +181,7 @@ section.hw-it-works .overlay{
     align-items: center;
 }
 .app-content.hw-it-works{
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -204,7 +204,7 @@ section.hw-it-works .overlay .row{
 }
 .row .col1{
     flex: 1 1 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
 }
@@ -221,11 +221,11 @@ section.hw-it-works .overlay .row{
 }
 .row .col2{
     flex: 2 1 0;
-    border: 2px solid rgb(60, 255, 0);
+    /* border: 2px solid rgb(60, 255, 0); */
 }
 .row .col3{
     flex: 1 1 0;
-    border: 2px solid rgb(4, 0, 255);
+    /* border: 2px solid rgb(4, 0, 255); */
     display: flex;
     flex-direction: column;
 }
@@ -265,7 +265,7 @@ section.about{
 }
 .about .row{
     margin-top: 10vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     flex-grow: 0.1;
     display: flex;
@@ -277,7 +277,7 @@ section.about{
     
 }
 .about .row .box{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     /* border-radius: 30px; */
     flex: 1 1 300px;
     height: 30vh;
@@ -444,7 +444,7 @@ footer{
     font-size: 22px;
 }
 footer .footer-content{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     max-width: 1200px;
     width: 100%;
 
@@ -453,7 +453,7 @@ footer .footer-content{
     align-items: center;
 }
 .info{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -583,7 +583,7 @@ footer .footer-content{
   }
 
   .hero-con {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     max-width: 450px;
     margin-top: 5vh;
     margin-left: auto;
@@ -662,11 +662,11 @@ footer .footer-content{
   flex-direction: column;
 }
 .hw-it-works .row.col.mobile .col1{
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 
 }
 .hw-it-works .row.col.mobile .col1 .box{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 70%;
 }
 .hw-it-works .row.col.mobile .col1 .box2{
@@ -674,7 +674,7 @@ footer .footer-content{
   margin-top: 5px;
 }
 .hw-it-works .row.col.mobile .col3 .box{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 70%;
 }
 .hw-it-works .row.col.mobile .col3 .box4{
@@ -689,7 +689,7 @@ footer .footer-content{
 /* --------------about-- */
 .about .row{
   margin-top: 10vh;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   flex-grow: 0.1;
   display: flex;
@@ -712,13 +712,13 @@ footer .footer-content{
   text-align: center;
 }
 .download-d-app .row3{
-  border: 5px solid brown;
+  /* border: 5px solid brown; */
   padding: 0 10% ;
-  margin-bottom: 40%;
+  margin-bottom: 45%;
 }
 /* ---------------------footer */
 .info{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   min-height: 10vh;
   display: flex;
