@@ -59,6 +59,7 @@ header div {
 .logo p {
   margin-left: 3px;
   font-weight: 600;
+  color: rgb(1, 1, 128);
 }
 a {
   text-decoration: none;
@@ -114,7 +115,12 @@ section {
   justify-content: center;
   gap: 6vh;
 }
-
+.hero-img.mobile{
+  display: none;
+}
+.hero-img.desktop{
+  display: block;
+}
 /* -------------hero image--------- */
 .hero-img {
   border: 2px solid rgb(51, 255, 0);
@@ -238,7 +244,7 @@ section.hw-it-works .overlay .row{
   display: none;
 }
 
-/* --------Why drivlink */
+/* --------Why drivlink---------About-*/
 section.about{
     display: flex;
     flex-direction: column;
@@ -254,6 +260,7 @@ section.about{
     font-weight: 700;
     font-size: 1.2rem;
     word-spacing: 0.5vw;
+    color: blue;
 }
 .about .row{
     margin-top: 10vh;
@@ -270,11 +277,17 @@ section.about{
 }
 .about .row .box{
     border: 2px solid yellow;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     flex: 1 1 300px;
     height: 30vh;
 }
+.about .row .box img{
+  width: 100%;
+  height: 100%;
+}
 /* ------------contact-- */
+/* #region */
+
 section.contact{
     display: flex;
     flex-direction: column;
@@ -371,6 +384,8 @@ form .two-fg{
 .contact .row .box2{
     flex: 1 1 0;
 }
+
+/* #endregion */
 
 /* ---------- download the app */
 section.download-d-app{
@@ -484,7 +499,7 @@ footer .footer-content{
   }
   header span img{
     width: 30px;
-    background-color: azure;
+    /* background-color: azure; */
 
   }
   nav  {
@@ -528,6 +543,7 @@ footer .footer-content{
     border-radius: 50%;
     /* background-color: blue; */
   }
+
   /* ----------main-------- */
   main{
     display: flex;
@@ -555,10 +571,10 @@ footer .footer-content{
     margin-right: auto;
   }
   .hero-con h1 {
-    /* word-spacing: ; */
+    word-spacing: 0px;
     font-weight: bolder;
     /* font-size: xx-large; */
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
   }
   .gen-con2 p {
@@ -579,6 +595,48 @@ footer .footer-content{
     height: 100%;
     width: 40%;
 }
+.hero-img.desktop{
+  display: none;
+}
+.hero-img.mobile{
+  display: block;
+  position: relative;
+}
+.hero-img.mobile .dot{
+
+  /* border-radius: 30%; */
+  height: 110%;
+  width: 90%;
+  position: absolute;
+  right: 5%;
+  /* top: 10%; */
+}
+.hero-img.mobile .eclipse{
+  /* display: none; */
+  /* border: 5px solid greenyellow; */
+  border-radius: 50%;
+  height: 90%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.hero-img.mobile .d-img{
+  position: absolute;
+  top: 20%;
+  height: 80%;
+
+}
+/* .eclipse{
+  height: 300px;
+  border: 5px solid gold;
+  background: url('./heroImageBg/Ellipse\ 22.png');
+  background-size:cover ;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: 10%;
+  margin-right: -40px;
+} */
 /* ------------------How it work----- */
 .hw-it-works .row.col.mobile{
   display: flex;
@@ -609,8 +667,21 @@ footer .footer-content{
 .hw-it-works .row.col.desktop{
   display: none;
 }
+/* --------------about-- */
+.about .row .box{
+  flex: 1 1 150px;
+}
 /* --------------contact us-- */
 .contact-img{
   display: none;
 }
+/* -------------------download app */
+.download-d-app span{
+  text-align: center;
+}
+.download-d-app .row3{
+  border: 5px solid brown;
+  padding: 0 10% ;
+}
+
 }
