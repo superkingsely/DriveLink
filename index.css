@@ -173,7 +173,7 @@ section.hw-it-works{
     background: url('./hwItWorks/background.jpg');
 }
 section.hw-it-works .overlay{
-    background-color: rgba(43, 0, 83, 0.904);
+    background-color: rgba(18, 0, 83, 0.904);
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -260,7 +260,8 @@ section.about{
     font-weight: 700;
     font-size: 1.2rem;
     word-spacing: 0.5vw;
-    color: blue;
+    color: rgba(18, 0, 83, 0.904);
+
 }
 .about .row{
     margin-top: 10vh;
@@ -389,7 +390,7 @@ form .two-fg{
 
 /* ---------- download the app */
 section.download-d-app{
-    background-color: rgba(43, 0, 83, 0.904);
+    background-color: rgba(18, 0, 83, 0.904);
 
     display: flex;
     flex-direction: column;
@@ -440,6 +441,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 22px;
 }
 footer .footer-content{
     border: 2px solid white;
@@ -462,6 +464,23 @@ footer .footer-content{
 }
 .info .box1{
     flex-grow: 2;
+}
+.info .box1 span.desktop{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.info .box1 span.mobile{
+  display: none;
+}
+.info .box1 .icon{
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.info .box1 .icon a{
+  display: block;
+  width: 40px;
 }
 .info .box2{
     display: flex;
@@ -695,6 +714,37 @@ footer .footer-content{
 .download-d-app .row3{
   border: 5px solid brown;
   padding: 0 10% ;
+  margin-bottom: 40%;
 }
+/* ---------------------footer */
+.info{
+  border: 2px solid red;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: start;
+  gap: 20px;
+  /* align-items: center; */
+}
+.info .box1 span.desktop{
+  display: none;
+}
+.info .box1 span.mobile{
+  display: block;
+}
+.info .box1 span img{
+  width: 200px;
+  height: 80px;
+}
+.info .box2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
+}
+.copyright{
+  font-size: 20px;
+}
 }
