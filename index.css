@@ -31,7 +31,8 @@ header{
     left: 0;
     top: 0;
     z-index: 100;
-    background: url(./white\ background.PNG);
+    background-color: white;
+    /* background: url(./white\ background.PNG); */
     width: 100%;
     /* border: 2px solid; */
     display: flex;
@@ -92,6 +93,9 @@ nav ul li a {
   color: black;
 }
 /* -----------------main------------- */
+/* ---------------hero-sectin */
+
+/* #region */
 main{
     width: 100%;
     display: flex;
@@ -170,7 +174,11 @@ section {
     height: 100%;
 }
 
+/* #endregion */
+
 /* ----------how it works------ */
+
+/* #region */
 
 section.hw-it-works{
     background: url('./hwItWorks/background.jpg');
@@ -262,7 +270,12 @@ section.hw-it-works .overlay .row{
   display: none;
 }
 
+/* #endregion */
+
 /* --------Why drivlink---------About-*/
+
+/* #region */
+
 section.about{
     display: flex;
     flex-direction: column;
@@ -304,7 +317,7 @@ section.about{
   width: 100%;
   height: 100%;
 }
-
+/* #endregion */
 
 
 /* ------------contact-- */
@@ -410,7 +423,13 @@ form .two-fg{
 
 /* #endregion */
 
+
 /* ---------- download the app */
+
+/* #region */
+
+
+
 section.download-d-app{
     background-color:  #2E396D;
     /* rgb(46 57 109 ) */
@@ -445,13 +464,18 @@ section.download-d-app .row2 img{
 }
 section.download-d-app .row3{
     margin-top: 3vh;
+    border: 2px solid yellow;
 }
 section.download-d-app .row3 img{
   margin-bottom: 20vh;
 }
+/* #endregion */
 
 
 /* -------------footer */
+
+/* #region */
+
 footer{
     position: absolute;
     left: 0;
@@ -518,6 +542,8 @@ footer .footer-content{
     gap: 0.7rem;
     align-items: center;
 }
+/* #endregion */
+
 
 
 
@@ -533,13 +559,20 @@ footer .footer-content{
 @media (max-width: 600px) {
   /* desktop */
   header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 5px solid greenyellow;
   /* background: url(./dark\ bg.PNG); */
 
-    /* width: 100%; */
+    max-width: 450px;
+    z-index: 999;
+
   }
   header span{
     display: block;
-    color: white;
+    /* color: white; */
+    border: 2px solid;
 
   }
   header span img{
