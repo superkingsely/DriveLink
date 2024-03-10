@@ -562,17 +562,10 @@ footer .footer-content{
     position: fixed;
     top: 0;
     left: 0;
-    border: 5px solid greenyellow;
-  /* background: url(./dark\ bg.PNG); */
-
-    max-width: 450px;
     z-index: 999;
-
   }
   header span{
     display: block;
-    /* color: white; */
-    border: 2px solid;
 
   }
   header span img{

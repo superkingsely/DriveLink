@@ -31,7 +31,7 @@ ScrollReveal({
     duration:2000,
     delay:200
 });
-ScrollReveal().reveal('.one-left',{origin:'left'})
-ScrollReveal().reveal('.three-left',{origin:'left'})
-ScrollReveal().reveal('.two-right',{origin:'right'})
-ScrollReveal().reveal('.four-right',{origin:'right'})
+ScrollReveal().reveal('.one-left',{origin:'right'})
+ScrollReveal().reveal('.three-left',{origin:'right'})
+ScrollReveal().reveal('.two-right',{origin:'left'})
+ScrollReveal().reveal('.four-right',{origin:'left'})
