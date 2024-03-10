@@ -464,7 +464,7 @@ section.download-d-app .row2 img{
 }
 section.download-d-app .row3{
     margin-top: 3vh;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 section.download-d-app .row3 img{
   margin-bottom: 20vh;
@@ -792,7 +792,7 @@ footer .footer-content{
 .download-d-app .row3{
   /* border: 5px solid brown; */
   padding: 0 10% ;
-  margin-bottom: 45%;
+  margin-bottom: 85%;
 }
 /* ---------------------footer */
 footer{
