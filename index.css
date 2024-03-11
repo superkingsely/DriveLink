@@ -195,6 +195,7 @@ section.hw-it-works .overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .app-content.hw-it-works {
   /* border: 5px solid yellow; */
@@ -282,6 +283,7 @@ section.about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .app-content.about {
   display: flex;
@@ -309,7 +311,7 @@ section.about {
   column-gap: 10px;
 }
 .about .row .box {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   /* border-radius: 30px; */
   flex: 1 1 300px;
   min-height: 30vh;
@@ -574,7 +576,29 @@ footer .footer-content {
 }
 /* #endregion */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile view */
+
+/* #region */
+
 @media (max-width: 600px) {
   /* desktop */
   header {
@@ -855,3 +879,5 @@ footer .footer-content {
     font-size: 15px;
   }
 }
+
+/* #endregion */
