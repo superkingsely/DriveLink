@@ -504,6 +504,7 @@ footer .footer-content{
     min-height: 10vh;
     display: flex;
     align-items: center;
+    margin-top: 5vh;
 }
 .info .box{
     flex: 1 1 0;
@@ -563,6 +564,7 @@ footer .footer-content{
     top: 0;
     left: 0;
     z-index: 999;
+    padding: 0 4%;
   }
   header span{
     display: block;
@@ -808,6 +810,7 @@ footer{
   align-items: start;
   gap: 20px;
   padding: 5%;
+  margin-top: 0;
   /* align-items: center; */
 }
 .info .box1 span.desktop{
@@ -821,9 +824,10 @@ footer{
 }
 .info .box1 span.mobile p{
   border-left: 2px solid;
-  height: 100px;
+  height: 60px;
   padding-left: 1rem;
-  padding-top:32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top:13px;
   font-size: 2rem;
 }
 .info .box1 span img{
