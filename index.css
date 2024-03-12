@@ -519,7 +519,7 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Franklin Gothic ", "Arial Narrow", Arial, sans-serif;
 }
 footer .footer-content {
@@ -547,10 +547,10 @@ footer .footer-content {
 }
 .info .box1 span.desktop {
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: 900;
   margin-top: 20px;
   letter-spacing: 0.1rem;
-  /* border: 2px solid; */
+  font-family: "Franklin Gothic ", "Arial Narrow", Arial, sans-serif;
 }
 .info .box1 span.mobile {
   display: none;
