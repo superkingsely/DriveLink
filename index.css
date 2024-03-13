@@ -496,10 +496,11 @@ section.download-d-app .row2 img {
 }
 section.download-d-app .row3 {
   margin-top: 3vh;
+  margin-bottom: 0;
   /* border: 2px solid yellow; */
 }
 section.download-d-app .row3 img {
-  margin-bottom: 20vh;
+  /* margin-bottom: 0vh; */
 }
 /* #endregion */
 
@@ -508,9 +509,9 @@ section.download-d-app .row3 img {
 /* #region */
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
   width: 100%;
   background-color: #0f1024;
   color: white;
