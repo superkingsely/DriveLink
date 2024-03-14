@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+}
+section{
+    /* border: 5px solid; */
+    margin-top: 10vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.section-content{
+    width: 100%;
+    /* border: 2px solid; */
+    max-width: 1200px;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+
+    display: flex;
+    flex-direction: column;
+}
+span.h1{
+    font-weight: 600;
+    margin-top: 5vh;
+    
+}
+p{
+    margin-top: 5vh;
+}
+ol li{
+    list-style: decimal;
+}
