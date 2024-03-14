@@ -496,7 +496,7 @@ section.download-d-app .row2 img {
 }
 section.download-d-app .row3 {
   margin-top: 3vh;
-  margin-bottom: 0;
+  margin-bottom: -5vh;
   /* border: 2px solid yellow; */
 }
 section.download-d-app .row3 img {
@@ -815,13 +815,19 @@ footer .footer-content {
   }
 
   /* -------------------download app */
+  section.download-d-app{
+    min-height: 70vh;
+  }
   .download-d-app span {
     text-align: center;
   }
   .download-d-app .row3 {
     /* border: 5px solid brown; */
     padding: 0 10%;
-    margin-bottom: 55%;
+    /* margin-bottom: -150px; */
+  }
+  .download-d-app .row3 img {
+    margin-bottom: -5vh;
   }
   /* ---------------------footer */
   footer {
