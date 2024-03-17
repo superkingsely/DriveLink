@@ -357,6 +357,10 @@ section.about {
 /* ------------contact-- */
 /* #region */
 
+/* mobile */
+.contact-info-mobile{
+  display: none;
+}
 section.contact {
   display: flex;
   flex-direction: column;
@@ -377,7 +381,7 @@ section.contact {
   width: 90%;
   background-color: white;
   /* height: 60%; */
-  padding: 5%;
+  padding: 10% 5%;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
@@ -877,18 +881,34 @@ footer .footer-content {
   display: none;
 }
 
-.contact-info.mobile{
-  margin-top: 2vh;
+.contact-info-mobile{
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* border: 2px solid; */
+  width: 100%;
+  margin-top: 3vh;
+
 }
-.info-btn{
+.contact-info-mobile .p1{
+}
+.info-btn-mobile{
+  margin-top: 3vh;
+  border: 1px solid;
+  padding: 5%;
+  width: 75%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  gap: 2vh;
+  background-color: rgba(0, 0, 0, 0.089);
+
 }
-.info-g{
+.info-g-mobile{
   display: flex;
+  gap: 1vw;
+}
+.i-con-mobile{
+  width: 20px;
 }
 
   /* -------------------download app */
