@@ -16,6 +16,11 @@ nav.addEventListener('click',()=>{
         nav.classList.remove('clicked')
     }
 })
+const p =document.querySelector('p')
+p.classList.add('.poppins-medium')
+// .poppins-medium
+// .poppins-light
+
 // --------------Typed js
 const typed=new Typed('.hero-con span',{
     strings:['Drivelink','Drivelink','Drivelink','Drivelink'],
