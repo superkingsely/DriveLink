@@ -32,13 +32,33 @@
     font-weight: 500;
     font-style: normal;
   }
+  .h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+   ol{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+   ul{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
   
 main{
     min-height: 100vh;
 }
 section{
     /* border: 5px solid; */
-    margin-top: 10vh;
+    margin-top: 20vh;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,6 +69,8 @@ section{
     max-width: 1200px;
     min-height: 100vh;
     padding-bottom: 10vh;
+    margin-top: -10vh;
+
 
     display: flex;
     flex-direction: column;
