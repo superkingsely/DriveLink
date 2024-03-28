@@ -16,10 +16,8 @@ nav.addEventListener('click',()=>{
         nav.classList.remove('clicked')
     }
 })
-const p =document.querySelector('p')
-p.classList.add('.poppins-medium')
-// .poppins-medium
-// .poppins-light
+
+
 
 // --------------Typed js
 const typed=new Typed('.hero-con span',{
@@ -44,4 +42,5 @@ ScrollReveal().reveal('.four-right',{origin:'left'})
 ScrollReveal().reveal('.h-text',{origin:'top'})
 ScrollReveal().reveal('.btn-g',{origin:'bottom'})
 ScrollReveal().reveal('.hero-img',{origin:'left'})
-ScrollReveal().reveal('.ab',{origin:'left'})
+// ScrollReveal().reveal('.ab',{origin:'left'})
+
