@@ -1,7 +1,38 @@
 const mobileBtnMenu=document.querySelector('header .menu')
 const nav=document.querySelector('nav')
 const closeMenu=document.querySelector('nav span')
-console.log(closeMenu)
+
+let sections=document.querySelectorAll('section')
+let navLinks=document.querySelectorAll('header nav a')
+
+window.onload=()=>{
+
+
+// navLinks.forEach(link=>{
+//     link.addEventListener('click',()=>{
+//         link.classList.remove('active')
+//     })
+// })
+
+window.addEventListener('scroll',()=>{
+    sections.forEach(sec=>{
+        let wintop=window.scrollY;
+        let sectop=sec.offsetTop -150;
+        let clinHeight=sec.offsetHeight;
+        let id=sec.getAttribute('id')
+
+        if(wintop>=sectop && wintop< sectop + clinHeight){
+            navLinks.forEach(link=>{
+                console.log(link)
+                link.classList.remove('active')
+                document.querySelector(`nav a[href*=${id}]`).classList.add('active')
+            })
+        }else{
+
+        }
+    })
+})
+}
 
 mobileBtnMenu.addEventListener('click',()=>{
     nav.classList.toggle('clicked')

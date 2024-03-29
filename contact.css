@@ -10,6 +10,16 @@ section{
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  nav ul li a.active{
+    color: rgb(7, 50, 241);
+    font-size: 18px;
+    font-weight: 600;
+  }
 @media (max-width:600px) {
     
     section{

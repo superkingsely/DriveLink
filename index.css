@@ -97,6 +97,11 @@ nav ul li a {
   font-size: 18px;
   font-weight: 500;
 }
+nav ul li a.active{
+  color: #2e396d;
+  font-size: 18px;
+  font-weight: 600;
+}
 /* -----------------main------------- */
 /* ---------------hero-sectin */
 
