@@ -1,3 +1,8 @@
+const mobileBtnMenu=document.querySelector('header .menu')
+const nav=document.querySelector('nav')
+const closeMenu=document.querySelector('nav span')
+
+
 const form=document.querySelector('form')
 const email=document.getElementById('email')
 const firstName=document.getElementById('firstName')
@@ -5,7 +10,19 @@ const lastName=document.getElementById('lastName')
 const message=document.getElementById('message')
 
 
+mobileBtnMenu.addEventListener('click',()=>{
+    nav.classList.toggle('clicked')
+})
 
+closeMenu.addEventListener('click',()=>{
+    nav.classList.remove('clicked')
+})
+
+nav.addEventListener('click',()=>{
+    if(nav.classList.contains('clicked')){
+        nav.classList.remove('clicked')
+    }
+})
 
 const sendEmail=()=>{
     let bodyMessage=`FullName: ${firstName.value} ${lastName.value} <br> Email:${email.value} <br> Message: ${message.value}`
