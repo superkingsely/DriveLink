@@ -4,9 +4,64 @@ const closeMenu=document.querySelector('nav span')
 
 let sections=document.querySelectorAll('section')
 let navLinks=document.querySelectorAll('header nav a')
+const form=document.querySelector('form')
 
+
+const email=document.getElementById('email')
+const firstName=document.getElementById('firstName')
+const lastName=document.getElementById('lastName')
+const message=document.getElementById('message')
+
+
+
+const sendEmail=()=>{
+    let bodyMessage=`FullName: ${firstName.value} ${lastName.value} <br> Email:${email.value} <br> Message: ${message.value}`
+    const validation=()=>{
+        if(firstName.value!=''&& lastName.value!='' && message.value!=''){
+            console.log('better')
+           
+            return "superkingsely@gmail.com"
+        }else{
+            console.log('not good')
+            return ''
+            // return  '<h1>bad</h1>'
+        }
+    }
+    Email.send({
+        SecureToken : "f978e73c-127d-47e2-887c-1a709c11f1a2",
+        To : 'dev.drivelink@gmail.com',
+        From : validation(),
+        Subject : "Please Attention here A client is trying to contact DriveLink",
+        Body : bodyMessage
+    }).then(
+        message => {
+            console.log(message)
+            // alert(message)
+            if( message=='OK'){
+            Swal.fire({
+                title: "Success!",
+                text: "Message Sent Successfully!",
+                icon: "success"
+              });
+        }else{
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!",
+                // footer: '<a href="#">Why do I have this issue?</a>'
+              });
+        }
+      }
+    );
+
+}
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log('okay')
+    sendEmail();
+})
 window.onload=()=>{
-
 
 // navLinks.forEach(link=>{
 //     link.addEventListener('click',()=>{
@@ -23,7 +78,6 @@ window.addEventListener('scroll',()=>{
 
         if(wintop>=sectop && wintop< sectop + clinHeight){
             navLinks.forEach(link=>{
-                console.log(link)
                 link.classList.remove('active')
                 document.querySelector(`nav a[href*=${id}]`).classList.add('active')
             })
