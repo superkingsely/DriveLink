@@ -69,4 +69,5 @@ form.onsubmit=(e)=>{
     e.preventDefault();
     console.log('okay')
     sendEmail();
+    form.reset();
 }
